@@ -1,8 +1,9 @@
 import sys
 input = sys.stdin.readline
-N, X = map(int, input().split())
-A = list(map(int, input().split()))
 
-for i in range(N):
-    if A[i] < X:
-        print(A[i])
+while True:
+    try:
+        A, B = map(int, input().split())
+        print(A + B)
+    except:
+        break
